@@ -78,8 +78,7 @@ const Carousel = ({ config = defaultOptions, children }) => {
       setSliderPosition((prev) => Math.round(prev - slideWidth - gap));
     } else if (infinite) {
       setSliderPosition(
-        (children.length - numberOfDisplayedItems) * slideWidth +
-          gap * numberOfDisplayedItems
+        (children.length - numberOfDisplayedItems) * (slideWidth + gap)
       );
     }
   };
