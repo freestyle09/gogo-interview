@@ -2,6 +2,9 @@
 
 html {
   font-size: 62.5%;
+  @media (max-width: $bp-mobile) {
+    font-size: 55%;
+  }
 }
 body {
   font-family: $heading-font;

@@ -5,7 +5,9 @@
   align-items: center;
   justify-content: space-between;
   transform-style: preserve-3d;
-
+  @media (max-width: $bp-mobile) {
+    grid-template-columns: 1fr;
+  }
   &__container {
     width: 100%;
     overflow: hidden;
@@ -27,6 +29,9 @@
     background-color: transparent;
     border: none;
     transition: 0.2s ease-in-out;
+    @media (max-width: $bp-mobile) {
+      display: none;
+    }
     &--left {
     }
     &--right {

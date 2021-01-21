@@ -3,10 +3,16 @@
 .cards {
   &__container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    justify-content: center;
     gap: 2rem;
     max-width: $container-inner-width;
     margin: 0 auto;
+  }
+  &__container .card:last-child {
+    @media (max-width: $bp-large-mobile) {
+      grid-column: 1/-1;
+    }
   }
   &__title {
     margin-bottom: 2.4rem;

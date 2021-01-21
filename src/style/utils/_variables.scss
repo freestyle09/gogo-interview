@@ -3,7 +3,8 @@ $white-color: #fff;
 $heading-font: "Rubik", sans-serif;
 $primary-font: "Rubik", sans-serif;
 
-$container-width: 117rem;
+$container-padding: 2rem;
+$container-width: calc(117rem + 4rem);
 $container-inner-width: 103.6rem;
 
 $primary-color: #215398;
@@ -12,3 +13,6 @@ $font-color: #2d3236;
 $gray-color: #808080;
 $magenta-color: #ff3859;
 $light-blue: #f1f6fc;
+
+$bp-large-mobile: 51.875em; // 830 / 16 = 51.875
+$bp-mobile: 43.75em; // 70 / 16 = 43.75

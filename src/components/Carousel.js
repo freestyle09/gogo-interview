@@ -53,10 +53,10 @@ const Carousel = ({ config = defaultOptions, children }) => {
   }, [windowSize.width]);
 
   useEffect(() => {
-    if (windowSize.width < 1024 && windowSize.width > 768) {
+    if (windowSize.width < 1024 && windowSize.width > 700) {
       return setDisplayedItems(tabletNumberOfItems);
     }
-    if (windowSize.width < 768) {
+    if (windowSize.width < 700) {
       return setDisplayedItems(mobileNumberOfItems);
     }
     return setDisplayedItems(numberOfItems);
