@@ -1,0 +1,9 @@
+@import "../utils/variables";
+
+.ball {
+  height: 32px;
+  width: 32px;
+  border-radius: 100px;
+  background-color: $magenta-color;
+  box-shadow: 0 4px 4px rgba($magenta-color, 0.2);
+}

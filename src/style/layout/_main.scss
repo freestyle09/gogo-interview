@@ -1,0 +1,14 @@
+@import "../utils/variables";
+
+.main {
+  text-align: center;
+  background-color: $light-blue;
+  padding: 4.9rem 0 7.2rem 0;
+
+  &__title {
+    margin-bottom: 0.3rem;
+  }
+  &__subtitle {
+    margin-bottom: 3.6rem;
+  }
+}

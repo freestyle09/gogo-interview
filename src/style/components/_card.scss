@@ -1,0 +1,37 @@
+@import "../utils/variables";
+
+.cards {
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: $container-inner-width;
+    margin: 0 auto;
+  }
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.card {
+  width: 100%;
+  min-height: 228px;
+  background-color: $white-color;
+  padding: 3.6rem 2.8rem;
+  text-align: center;
+  display: grid;
+  gap: 1.2rem;
+  align-content: flex-start;
+  justify-items: center;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 300;
+    color: $font-color;
+  }
+  &__description {
+    color: $gray-color;
+    font-size: 1.5rem;
+    line-height: 2.4rem;
+  }
+}

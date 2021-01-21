@@ -1,0 +1,42 @@
+.carousel {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  transform-style: preserve-3d;
+
+  &__container {
+    width: 100%;
+    overflow: hidden;
+  }
+  &__wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    transition: 0.2s ease-in-out;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 0.2s ease-in-out;
+    &--left {
+    }
+    &--right {
+      transform: rotateZ(180deg);
+    }
+    &-icon {
+      margin-left: -5px;
+    }
+    &:hover {
+      background-color: rgba($white-color, 0.05);
+    }
+  }
+}

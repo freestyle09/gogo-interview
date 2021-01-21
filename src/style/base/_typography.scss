@@ -6,3 +6,73 @@ html {
 body {
   font-family: $heading-font;
 }
+
+%heading {
+  font-family: $heading-font;
+  font-weight: 300;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  line-height: 1.3;
+  @extend %heading;
+  &--white {
+    color: $white-color;
+  }
+}
+.heading-2 {
+  font-size: 3rem;
+  line-height: 1;
+  @extend %heading;
+  &--white {
+    color: $white-color;
+  }
+}
+.heading-3 {
+  font-size: 2.4rem;
+  @extend %heading;
+  &--white {
+    color: $white-color;
+  }
+}
+.heading-4 {
+  font-size: 2rem;
+  @extend %heading;
+  &--white {
+    color: $white-color;
+  }
+}
+.heading-5 {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  @extend %heading;
+  &--white {
+    color: $white-color;
+  }
+}
+.heading-6 {
+  font-size: 1.6rem;
+  @extend %heading;
+  &--white {
+    color: $white-color;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+
+  &:not(:last-of-type) {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.text {
+  &--large {
+    line-height: 1.6;
+    font-size: 2rem;
+  }
+  &--white {
+    color: $white-color;
+  }
+}
